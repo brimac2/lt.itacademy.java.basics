@@ -9,11 +9,12 @@ public class Loops {
         int minutesPerYear = 0;
         int hoursPerYear = 0;
 
-        for (int i = 0; i < daysPerYear; i++ ) {
+        int i = 0;
+        while (i<daysPerYear) {
             minutesPerYear += minutesPerOneDay;
             hoursPerYear += hoursPerOneDay;
+            i++;
         }
-
         System.out.println("There are " + hoursPerYear + " hours or " + minutesPerYear + " minutes in one year.");
 
     }
